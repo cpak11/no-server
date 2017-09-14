@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="mainframe"  ng-app="cndapp">
+      <div id="framecontain">
+        <section class="features">
+          <nav>
+            <p>
+              <span ui-sref="worldnews">World News</span> |
+              <span ui-sref="business">Business</span> |
+              <span ui-sref="tech">Tech</span> |
+              <span ui-sref="sports">Sports</span> |
+              <span ui-sref="entertainment">Entertainment</span>
+            </p>
+          </nav>
+
+          <ui-view></ui-view>
+
+        </section>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="./js/cndapp.js"></script>
+    <script src="./js/cndserv.js"></script>
+    <script src="./js/ctrl/ctrlworldnews.js"></script>
+    <script src="./js/ctrl/ctrlbusiness.js"></script>
+    <script src=""></script>
+
+  </body>
+</html>
+
+
+<!-- <div class="cndlogo">
+  <p>CORE NEWS DAILY</p>
+  <img src="/assets/piec.svg" alt="">
+</div> -->

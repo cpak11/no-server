@@ -1,0 +1,8 @@
+:root{font-family:Arial;}
+
+
+.cndlogo{position:relative;display:inline-block;}
+.cndlogo p{font-size:3.75rem;line-height:0;font-family: 'Libre Barcode 39 Text', cursive;}
+.cndlogo img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:220px;opacity:.3;}
+
+span[ui-sref]{cursor:pointer;}
