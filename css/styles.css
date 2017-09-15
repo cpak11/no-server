@@ -1,4 +1,4 @@
-:root{font-family:Arial;}
+:root{font-family:Arial;box-sizing:border-box;}
 
 
 .cndlogo{position:relative;display:inline-block;}
@@ -6,3 +6,13 @@
 .cndlogo img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:220px;opacity:.3;}
 
 span[ui-sref]{cursor:pointer;}
+
+div#mainframe{width:100%;height:100vh;}
+
+div#framecontain{width:1320px;margin:0 auto;position:relative;}
+
+div#frameleft,div#frameright{display:inline-block;position:absolute;top:0;}
+div#frameleft{width:38.2%;left:0;}
+div#frameright{width:61.8%;right:0;}
+
+nav p:hover::before{content:'| ';color:red;}

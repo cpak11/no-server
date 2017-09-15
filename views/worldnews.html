@@ -1,8 +1,9 @@
-<div ng-repeat="source in sources">
 
+<div ng-repeat="source in sources" class="viewcontain">
   <h2>{{source.name}}</h2>
-  <div ng-repeat="article in source.articles">
-    <h6>{{article.title}}</h6>
+  <div ng-repeat="article in source.articles.slice(0,3)">
+    <img ng-src="{{article.urlToImage}}" alt="" width="100">
+    {{article.title}}
   </div>
-  
+  <div ng-repeat="article in source.articles.slice(3,article.length)">{{article.title}}</div>
 </div>

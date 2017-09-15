@@ -1,9 +1,16 @@
-<div ng-repeat="source in sources">
 
-  <h2>{{source.name}}</h2>
-  <div ng-repeat="article in source.articles">
-    <h6>{{article.title}}</h6>
-    <img ng-src="{{article.urlToImage}}" alt="">
-  </div>
+<div ng-repeat="source in sources" class="viewcontain">
+  <h1>{{source.name}}</h1>
 
+    <div ng-repeat="article in source.articles" class="viewcontentcontain">
+      <div class="viewtitle">
+        <a href="{{article.url}}" target="_blank">
+          <h3>{{article.title}}</h3>
+        </a>
+
+      </div>
+      <div class="viewimg">
+        <img ng-src="{{article.urlToImage}}" alt="">
+      </div>
+    </div>
 </div>
