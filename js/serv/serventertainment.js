@@ -1,14 +1,14 @@
-angular.module('cndapp').service('cndserv', function($http){
+angular.module('cndapp').service('serventertainment', function($http){
 var self = this
-  this.getworldnews = function() {
+  this.getentertainment = function() {
     return $http({
       method: "GET",
-      url: 'https://newsapi.org/v1/sources?category=general&country=us',
+      url: 'https://newsapi.org/v1/sources?category=entertainment&country=us',
     }).then(function(response) {
       var promises = [];
       var sources = response.data.sources.splice(0,6)
       sources.forEach(function(source){
-        promises.push(self.getworldnewsarticles(source.id))
+        promises.push(self.getentertainmentarticles(source.id))
       })
       return Promise.all(promises).then(function(articleResponse){
         var articles = [];
@@ -23,7 +23,7 @@ var self = this
     })
   };
 
-  this.getworldnewsarticles = function(id) {
+  this.getentertainmentarticles = function(id) {
     return $http({
       method: "GET",
       url: 'https://newsapi.org/v1/articles?source=' + id + '&sortBy=top&apiKey=718f3f327c5348bb8c698f3e95eab7a6',
@@ -31,9 +31,4 @@ var self = this
       return response.data;
     })
   };
-
-
-
-
-
-})
+});

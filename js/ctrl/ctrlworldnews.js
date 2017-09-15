@@ -1,6 +1,6 @@
-angular.module('cndapp').controller('ctrlworldnews', function($scope, cndserv){
+angular.module('cndapp').controller('ctrlworldnews', function($scope, servworldnews){
 
-  cndserv.getworldnews().then(function(response) {
+  servworldnews.getworldnews().then(function(response) {
     $scope.sources = response;
   })
 

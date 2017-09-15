@@ -1,4 +1,4 @@
-angular.module('cndapp').service('cndserv', function($http){
+angular.module('cndapp').service('servworldnews', function($http){
 var self = this
   this.getworldnews = function() {
     return $http({
@@ -30,10 +30,5 @@ var self = this
     }).then(function(response) {
       return response.data;
     })
-  };
-
-
-
-
-
-})
+  }
+});

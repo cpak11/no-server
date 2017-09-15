@@ -1,1 +1,9 @@
-{{gb}}
+<div ng-repeat="source in sources">
+
+  <h2>{{source.name}}</h2>
+  <div ng-repeat="article in source.articles">
+    <h6>{{article.title}}</h6>
+    <img ng-src="{{article.urlToImage}}" alt="">
+  </div>
+
+</div>

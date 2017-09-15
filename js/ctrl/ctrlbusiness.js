@@ -1,8 +1,7 @@
-angular.module('cndapp').controller('ctrlbusiness', function($scope, cndserv){
+angular.module('cndapp').controller('ctrlbusiness', function($scope, servbusiness){
 
-  cndserv.getbusiness().then(function(response) {
-    console.log(response);
-    $scope.gb = response.articles;
+  servbusiness.getbusiness().then(function(response) {
+    $scope.sources = response;
   })
 
 });

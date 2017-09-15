@@ -12,5 +12,20 @@ angular.module('cndapp', ['ui.router'])
     templateUrl: '/views/business.html',
     controller: 'ctrlbusiness'
   })
+  .state('tech', {
+    url: '/tech',
+    templateUrl: '/views/tech.html',
+    controller: 'ctrltech'
+  })
+  .state('sports', {
+    url: '/sports',
+    templateUrl: '/views/sports.html',
+    controller: 'ctrlsports'
+  })
+  .state('entertainment', {
+    url: '/entertainment',
+    templateUrl: '/views/entertainment.html',
+    controller: 'ctrlentertainment'
+  })
 
 });
