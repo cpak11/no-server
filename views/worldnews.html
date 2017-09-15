@@ -1,9 +1,12 @@
 
 <div ng-repeat="source in sources" class="viewcontain">
   <h2>{{source.name}}</h2>
-  <div ng-repeat="article in source.articles.slice(0,3)">
-    <img ng-src="{{article.urlToImage}}" alt="" width="100">
-    {{article.title}}
+
+  <div class="viewfeaturedcontain">
+      <div ng-repeat="article in source.articles.slice(0,3)" class="viewfeatured">
+        <img ng-src="{{article.urlToImage}}" alt="no image" class="viewimg">
+        <h4><a href="{{article.url}}" target="_blank">{{article.title}}</a></h4>
+      </div>
   </div>
-  <div ng-repeat="article in source.articles.slice(3,article.length)">{{article.title}}</div>
+  <p ng-repeat="article in source.articles.slice(3,article.length)"><a href="{{article.url}}" target="_blank">{{article.title}}</a></p>
 </div>

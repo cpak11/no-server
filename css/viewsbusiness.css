@@ -1,0 +1,17 @@
+/*business*/
+
+div.bviewcontain{display:block;width:100%;position:relative;margin-bottom:35px;}
+div.bviewcontain a{text-decoration:none;color:inherit;}
+
+div.bviewfeaturedcontain, div.morebusiness{display:inline-block;}
+div.bviewfeaturedcontain{width:500px;}
+div.imgntitle{position:relative;margin-bottom:25px;overflow:hidden;}
+div.btitle{position:absolute;width:calc(100% - 20px);bottom:0;left:0;background-color:rgb(70, 115, 180);padding:10px;}
+div.btitle>h4{color:white;line-height:1.2;margin:0;}
+
+img.bviewimg{max-width:500px;max-height:350px;}
+
+div.morebusiness{width:285px;position:absolute;top:0;right:0;margin-top:30px;}
+
+div.morebusiness h3{font-size:1rem; padding-top:15px; border-top:1px solid silver;}
+div.morebusiness h3:first-child{border-top:none;}
