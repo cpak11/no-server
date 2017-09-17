@@ -13,5 +13,5 @@ img.bviewimg{max-width:500px;max-height:350px;}
 
 div.morebusiness{width:285px;position:absolute;top:0;right:0;margin-top:30px;}
 
-div.morebusiness h3{font-size:1rem; padding-top:15px; border-top:1px solid silver;}
+div.morebusiness h3{font-size:1rem; padding-top:15px;padding-bottom:15px; border-top:1px solid silver;}
 div.morebusiness h3:first-child{border-top:none;}

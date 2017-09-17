@@ -1,0 +1,8 @@
+
+
+.sportsoutlet{width:100%;margin-bottom:70px;}
+
+.sportsarticle{width:100%;padding:20px;position:relative;}
+.sportsimg,.sportsarticle h2,.sportsarticlemore{width:calc(100% - 40px);}
+
+.sportsarticlemore{border-top:1px solid silver;margin:0 0 50px 20px;padding-top:20px;}

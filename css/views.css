@@ -7,3 +7,4 @@ div.viewfeaturedcontain{display:flex;flex-wrap:wrap;}
 div.viewfeatured{border-right:1px solid rgba(80,80,80,.5);text-align:center;flex:1;padding:0 15px;}
 div.viewfeatured:last-child{border-right:none;}
 img.viewimg{max-width:215px;max-height:150px;}
+.wnm{margin-left:30px;width:520px;}

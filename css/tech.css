@@ -14,7 +14,7 @@ background:rgb(75,75,75);
 .tbgi{z-index:-1;position:absolute;width:100%;height:100%;opacity:.4;background-size:cover;}
 
 .CCContaintech{
-  margin-top:290px;width:817px;display:flex;padding-bottom:50px;
+  margin-top:280px;width:817px;display:flex;padding-bottom:50px;
 }
 .techcontentcontain3{flex:1;height:135px;padding:15px;}
 .techcontentcontain3 h3{max-height:46px;}
