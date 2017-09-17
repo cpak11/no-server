@@ -1,16 +1,26 @@
 
-<div ng-repeat="source in sources" class="viewcontain">
+<div ng-repeat="source in sources" class="techcontain">
   <h1>{{source.name}}</h1>
 
-    <div ng-repeat="article in source.articles" class="viewcontentcontain">
-      <div class="viewtitle">
-        <a href="{{article.url}}" target="_blank">
-          <h3>{{article.title}}</h3>
-        </a>
+  <div class="ccontaintech">
+    <div ng-repeat="article in source.articles.slice(0,2)" class="techcontentcontain2">
+      <h3><a href="{{article.url}}" target="_blank">{{article.title}}</a></h3>
+      <div class="tbgi" style="background-image:url({{article.urlToImage}})"></div>
+    </div>
+  </div>
 
-      </div>
-      <div class="viewimg">
-        <img ng-src="{{article.urlToImage}}" alt="" class="techimg">
-      </div>
+  <div class="CCContaintech">
+    <div class="techcontentcontain3" ng-repeat="article in source.articles.slice(2,5)">
+      <h3><a href="{{article.url}}" target="_blank">{{article.title}}</a></h3>
+      <img ng-src="{{article.urlToImage}}" alt=""class="imgtech3">
+
+
+    </div>
+  </div>
+
+    <div class="moretech" ng-repeat="article in source.articles.slice(5,article.length)">
+      <a href="{{article.url}}" target="_blank">
+        <p>{{article.title}}</p>
+      </a>
     </div>
 </div>

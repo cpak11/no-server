@@ -15,4 +15,5 @@ div#frameleft,div#frameright{display:inline-block;position:absolute;top:0;}
 div#frameleft{width:38.2%;left:0;}
 div#frameright{width:61.8%;right:0;}
 
+nav p{cursor:pointer;}
 nav p:hover::before{content:'| ';color:red;}
