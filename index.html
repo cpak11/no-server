@@ -2,37 +2,49 @@
 <html>
   <head>
     <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Zilla+Slab+Highlight:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/views.css" />
     <link rel="stylesheet" href="/css/viewsbusiness.css" />
     <link rel="stylesheet" href="/css/tech.css" />
     <link rel="stylesheet" href="/css/sports.css" />
     <link rel="stylesheet" href="/css/entertainment.css" />
+    <link rel="stylesheet" href="/css/homeview.css" />
 
   </head>
   <body>
 
     <div id="mainframe"  ng-app="cndapp">
+<div class="bgvid">
+  <video src="assets/Broadway.mp4" autoplay loop muted poster="posterimage.jpg">
+
+  </video>
+</div>
 
       <div id="framecontain">
 
         <div id="frameleft">
+
           <div class="cndlogo" ui-sref="home">
             <p>CORE NEWS DAILY</p>
             <img src="/assets/piec.svg" alt="">
           </div>
 
           <direct-nav-bar></direct-nav-bar>
-
           <core-news></core-news>
+
 
         </div>
 
+
+
+
         <div id="frameright">
-          <ui-view></ui-view>
+          <div ui-view>
+
+          </div>
         </div>
 
       </div>
@@ -55,6 +67,9 @@
     <script src="/js/serv/serventertainment.js"></script>
     <script src="/js/direct/directnavbar.js"></script>
     <script src="/js/direct/corenews.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="/js/scripts.js"></script>
+
 
   </body>
 </html>

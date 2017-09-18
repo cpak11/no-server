@@ -3,7 +3,8 @@ angular.module('cndapp', ['ui.router'])
   $urlRouterProvider.otherwise('/');
   $stateProvider
   .state('home', {
-    url: '/'
+    url: '/',
+    templateUrl: '/views/homeview.html'
   })
   .state('worldnews', {
     url: '/world-news',

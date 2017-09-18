@@ -1,10 +1,3 @@
-window.onload = function() {
-  Particles.init({
-    selector: '.background'
-  });
-};
-$(function(){
-
-  $('')
-
+$(document).ready(function(){
+  $('.bgvid video').playbackRate = .5;
 });

@@ -1,14 +1,17 @@
 
-<div ng-repeat="source in sources" class="sportsoutlet">
-  <h1>{{source.name}}</h1>
-  <div class="sportsarticle" ng-repeat="article in source.articles.slice(0,3)">
-    <img ng-src="{{article.urlToImage}}" alt="" class="sportsimg" width="100">
-    <h2>{{article.title}}</h2>
-    <p><small>{{article.publishedAt}}</small></p>
-    <p>{{article.description}}</p>
-  </div>
-  <div class="sportsarticlemore">
-    <p ng-repeat="article in source.articles.slice(3,article.length)"><strong>{{article.title}}</strong></p>
+<div class="sssbg">
+  <div ng-repeat="source in sources" class="sportsoutlet">
+    <h1>{{source.name}}</h1>
+    <div class="sportsarticle" ng-repeat="article in source.articles.slice(0,3)">
+      <img ng-src="{{article.urlToImage}}" alt="" class="sportsimg" width="100">
+      <h2><a href="{{article.url}}">{{article.title}}</a></h2>
+      <p><small>{{article.publishedAt}}</small></p>
+      <p>{{article.description}}</p>
+    </div>
+    <div class="sportsarticlemore">
+      <p ng-repeat="article in source.articles.slice(3,article.length)"><strong><a href="{{article.url}}">{{article.title}}</a></strong></p>
 
+    </div>
   </div>
+
 </div>

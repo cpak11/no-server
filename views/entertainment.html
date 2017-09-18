@@ -1,23 +1,27 @@
 
-<div ng-repeat="source in sources" class="entoutlet">
-  <h1>{{source.name}}</h1>
-  <div class="entftart" ng-repeat="article in source.articles.slice(0,1)">
-    <div class="entftimg" style="background-image:url({{article.urlToImage}})"></div>
-    <div class="entfttxt">
-      <h2>{{article.title}}</h2>
-      <p><small>{{article.author}}</small></p>
-    </div>
-  </div>
 
-  <div class="entarts">
-    <div class="oneof2" ng-repeat="article in source.articles.slice(1,3)">
-      <h3>{{article.title}}</h3>
-      <img ng-src="{{article.urlToImage}}" alt="">
+<div class="eeebg">
+  <div ng-repeat="source in sources" class="entoutlet">
+    <h1>{{source.name}}</h1>
+    <div class="entftart" ng-repeat="article in source.articles.slice(0,1)">
+      <div class="entftimg" style="background-image:url({{article.urlToImage}})"></div>
+      <div class="entfttxt">
+        <h2><a href="{{article.url}}">{{article.title}}</a></h2>
+        <p><small>{{article.author}}</small></p>
+      </div>
     </div>
-  </div>
 
-  <div class="entartsmore">
-    <p  ng-repeat="article in source.articles.slice(3,article.length)"><strong>{{article.title}}</strong></p>
+    <div class="entarts">
+      <div class="oneof2" ng-repeat="article in source.articles.slice(1,3)">
+        <h3><a href="{{article.url}}">{{article.title}}</a></h3>
+        <img ng-src="{{article.urlToImage}}" alt="">
+      </div>
+    </div>
+
+    <div class="entartsmore">
+      <p  ng-repeat="article in source.articles.slice(3,article.length)"><strong><a href="{{article.url}}">{{article.title}}</a></strong></p>
+    </div>
+
   </div>
 
 </div>
