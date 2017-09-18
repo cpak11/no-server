@@ -4,31 +4,31 @@ angular.module('cndapp', ['ui.router'])
   $stateProvider
   .state('home', {
     url: '/',
-    templateUrl: '/views/homeview.html'
+    templateUrl: 'views/homeview.html'
   })
   .state('worldnews', {
     url: '/world-news',
-    templateUrl: '/views/worldnews.html',
+    templateUrl: 'views/worldnews.html',
     controller: 'ctrlworldnews'
   })
   .state('business', {
     url: '/business',
-    templateUrl: '/views/business.html',
+    templateUrl: 'views/business.html',
     controller: 'ctrlbusiness'
   })
   .state('tech', {
     url: '/tech',
-    templateUrl: '/views/tech.html',
+    templateUrl: 'views/tech.html',
     controller: 'ctrltech'
   })
   .state('sports', {
     url: '/sports',
-    templateUrl: '/views/sports.html',
+    templateUrl: 'views/sports.html',
     controller: 'ctrlsports'
   })
   .state('entertainment', {
     url: '/entertainment',
-    templateUrl: '/views/entertainment.html',
+    templateUrl: 'views/entertainment.html',
     controller: 'ctrlentertainment'
   })
 
